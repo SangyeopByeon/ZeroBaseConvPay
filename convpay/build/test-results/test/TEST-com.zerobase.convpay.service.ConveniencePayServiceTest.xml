@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.zerobase.convpay.service.ConveniencePayServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-11T11:40:40" hostname="DESKTOP-CN75GIL" time="0.027">
+<testsuite name="com.zerobase.convpay.service.ConveniencePayServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-11T14:30:57" hostname="DESKTOP-CN75GIL" time="0.031">
   <properties/>
-  <testcase name="pay_success()" classname="com.zerobase.convpay.service.ConveniencePayServiceTest" time="0.027"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="pay_cancel_fail()" classname="com.zerobase.convpay.service.ConveniencePayServiceTest" time="0.031"/>
+  <system-out><![CDATA[MoneyAdapter.use : 99
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
