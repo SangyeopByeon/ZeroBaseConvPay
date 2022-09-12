@@ -19,12 +19,6 @@ public class ConveniencePayService {
             moneyUseResult = moneyAdapter.use(payRequest.getPayAmount());
         }
 
-
-        // fail fast
-        // Exception case1
-        // Exception case2
-        // Exception case3
-
         if (cardUseResult == CardUseResult.USE_FAIL || moneyUseResult == MoneyUseResult.USE_FAIL) {
             return new PayResponse(PayResult.FAIL, 0);
         }
