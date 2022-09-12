@@ -7,9 +7,9 @@ import com.zerobase.convpay.type.PayCancelResult;
 import com.zerobase.convpay.type.PayResult;
 
 public class ConveniencePayService {
-    private final MoneyAdapter moneyAdapter = new MoneyAdapter();
+    private static final MoneyAdapter moneyAdapter = new MoneyAdapter();
 
-    public PayResponse pay(PayRequest payRequest) {
+    public static PayResponse pay(PayRequest payRequest) {
         MoneyUseResult moneyUseResult = moneyAdapter.use(payRequest.getPayAmount());
 
         // fail fast

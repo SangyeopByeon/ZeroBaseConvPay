@@ -4,11 +4,14 @@ import com.zerobase.convpay.type.PayCancelResult;
 
 public class PayCancelResponse {
     PayCancelResult payCancelResult;
-    Integer payCancceledAmount;
+    Integer payCanceledAmount;
+
+
+
 
     public PayCancelResponse(PayCancelResult payCancelResult, Integer payCancceledAmount) {
         this.payCancelResult = payCancelResult;
-        this.payCancceledAmount = payCancceledAmount;
+        this.payCanceledAmount = payCancceledAmount;
     }
 
     public PayCancelResult getPayCancelResult() {
@@ -19,11 +22,19 @@ public class PayCancelResponse {
         this.payCancelResult = payCancelResult;
     }
 
-    public Integer getPayCancceledAmount() {
-        return payCancceledAmount;
+    public Integer getPayCanceledAmount() {
+        return payCanceledAmount;
     }
 
-    public void setPayCancceledAmount(Integer payCancceledAmount) {
-        this.payCancceledAmount = payCancceledAmount;
+    public void setPayCanceledAmount(Integer payCanceledAmount) {
+        this.payCanceledAmount = payCanceledAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "PayCancelResponse{" +
+                "payCancelResult=" + payCancelResult +
+                ", payCanceledAmount=" + payCanceledAmount +
+                '}';
     }
 }
