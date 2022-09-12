@@ -15,7 +15,7 @@ public class UserClient {
 
         // G25, 결제 1000원
         PayRequest payRequest = new PayRequest(ConvenienceType.G25, 1000);
-        PayResponse payResponse = ConveniencePayService.pay(payRequest);
+        PayResponse payResponse = conveniencePayService.pay(payRequest);
 
         System.out.println(payResponse);
 
